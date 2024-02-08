@@ -12,8 +12,9 @@ import Scroll from './src/components/scroll';
 import TopTab from './src/screens/lab7/topmenu';
 import Lab81 from './src/screens/lab8/lab81';
 import Lab82 from './src/screens/lab8/lab82';
+import AddUser from './src/screens/lab8/addUser';
 // import Lab7 from './src/screens/lab7';
-const Stack = createNativeStackNavigator();
+// const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     // <SafeAreaView>
@@ -28,6 +29,7 @@ const App = () => {
     // </NavigationContainer>
     // <Scroll></Scroll>
     <Lab82></Lab82>
+
     // <TopTab></TopTab>
   );
 };

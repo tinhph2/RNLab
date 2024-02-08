@@ -31,7 +31,6 @@ export const styles = StyleSheet.create({
     marginBottom: 12,
     marginTop: 12,
   },
-
   name: {
     textAlign: 'left',
     marginRight: 'auto',
@@ -56,9 +55,7 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
-
   // model
-
   modalContent: {
     backgroundColor: 'white',
     padding: 16,

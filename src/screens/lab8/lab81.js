@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import {RollInRight} from 'react-native-reanimated';
+
 const Lab81 = () => {
   const [data, setData] = useState([]);
   const getAPI = async () => {
