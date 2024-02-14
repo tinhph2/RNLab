@@ -12,6 +12,7 @@ const ListUser = ({navigation}) => {
   const [data, setData] = useState([]);
   const [openDialog, setOpenDialog] = useState(false);
   const [selectedUser, setSelectedUser] = useState(undefined);
+
   const getAPI = async () => {
     const url = 'http://10.0.2.2:3000/users';
     let result = await fetch(url);
@@ -38,9 +39,12 @@ const ListUser = ({navigation}) => {
     console.log(data);
   };
 
-  useEffect(() => {
-    getAPI();
-  }, []);
+  React.useEffect(() => {
+    const focusHandler = navigation.addListener('focus', () => {
+      getAPI();
+    });
+    return focusHandler;
+  }, [navigation]);
 
   return (
     <ScrollView>

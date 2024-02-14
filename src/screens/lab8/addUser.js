@@ -4,6 +4,7 @@ import {useState} from 'react';
 const AddUser = () => {
   const [name, setName] = useState('');
   const [birthday, setBirthday] = useState('');
+
   const saveData = async () => {
     console.warn(name, birthday);
     const url = 'http://10.0.2.2:3000/users';
